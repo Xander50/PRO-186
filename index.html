@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPE particle system component</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+    <a-scene id="scene">
+        <a-entity position="10 1 0"
+        spe-particles="
+        color:blue,yellow,green,red;
+        distribution:sphere;
+        radius:2;
+        randomize-velocity:true;
+        particle-count:1000,
+        velocity:10;
+        velocity-spread:30;
+        drag:-5;
+        max-age:10;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1200;
+        size:2,1,2,1
+        "
+        ></a-entity>
+        <a-entity position="-10 1 0"
+        spe-particles="
+        color:red,orange,purple,blue;
+        distribution:sphere;
+        radius:2;
+        randomize-velocity:true;
+        particle-count:1000,
+        velocity:10;
+        velocity-spread:30;
+        drag:-5;
+        max-age:10;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1200;
+        size:2,1,2,1
+        "
+        ></a-entity>
+        <a-entity position="0 10 0"
+        spe-particles="
+        color:blue,yellow,green,red;
+        distribution:sphere;
+        radius:2;
+        randomize-velocity:true;
+        particle-count:1000,
+        velocity:10;
+        velocity-spread:30;
+        drag:-5;
+        max-age:10;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1200;
+        size:2,1,2,1
+        "
+        ></a-entity>
+        <a-entity position="0 -10 0"
+        spe-particles="
+        color:red,orange,purple,blue;
+        distribution:sphere;
+        radius:2;
+        randomize-velocity:true;
+        particle-count:1000,
+        velocity:10;
+        velocity-spread:30;
+        drag:-5;
+        max-age:10;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1200;
+        size:2,1,2,1
+        "
+        ></a-entity>
+
+        <a-sky color="black"></a-sky>
+        <a-camera position="0 0 30"></a-camera>
+    </a-scene>
+    
+</body>
+</html>
